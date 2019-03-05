@@ -14,7 +14,7 @@ func initRouter() *gin.Engine{
 
 	router.GET("/persons", GetPersonsApi)  //查询所有
 
-	router.GET("/person/:id", GetPersonApi)  //查询单个
+	router.GET("/person/:id", GetPersonApi)
 
 	router.PUT("/person/:id", ModPersonApi)  //更新
 
