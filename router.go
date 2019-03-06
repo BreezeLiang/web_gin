@@ -16,9 +16,11 @@ func initRouter() *gin.Engine {
 
 	router.GET("/person/:id", GetPersonApi) //查询单个
 
-	router.PUT("/person/:id", ModPersonApi) //更新
+	router.PUT("/person/:id", ModPersonApi) //更新1
 
 	router.DELETE("/person/:id", DelPersonApi) //删除
+
+	router.POST("/person/:id", UpPersonApi) //更新2
 
 	return router
 }
